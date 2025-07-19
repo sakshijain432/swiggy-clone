@@ -55,7 +55,7 @@ const Header = () => {
 
       </div>
 
-       <header className="p-[15px] shadow-xl text-[#686b78]">
+       <header className="p-[15px] shadow-xl text-[#686b78] sticky top-0 bg-white z-[9999]">
             <div className="max-w-[1200px] mx-auto  flex items-center ">
                 
                 <div className="w-[100px] ">
@@ -65,7 +65,7 @@ const Header = () => {
                    <span className="font-bold border-b-[3px] border-[black]">Sitapura</span> Rajasthan Jaipur ,India <RxCaretDown onClick={showSideMenu} fontSize={25} className='inline text-[#fc8019] cursor-pointer'/>
                 </div>
 
-                <nav className='flex list-none gap-10 ml-auto font-semibold text-[18px]'>
+                <nav className='hidden md:flex list-none gap-10 ml-auto font-semibold text-[18px]'>
                    {
                     links.map((item,idx) => {
                         return <li key={idx} className='flex items-center gap-2 hover:text-[#fc8019] cursor-pointer'>
@@ -76,6 +76,7 @@ const Header = () => {
                     })
                    }
                 </nav>
+                
             </div>
        </header>
        </>
